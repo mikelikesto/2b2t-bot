@@ -27,7 +27,7 @@ bot.on('chat', (username, message, prefix) => {
 
 
 bot.on('chat', (username, message, prefix) => {
-  if  (message.startsWith( config.prefix + 'help')) {
+  if  (message.startsWith( config.prefix + 'test')) {
     bot.chat(message)
   }
   return;
