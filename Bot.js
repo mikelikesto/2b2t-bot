@@ -99,6 +99,15 @@ bot.on('chat', (username, message, prefix) => {
 
 
 bot.on('chat', (username, message, prefix) => {
+  if  (message.startsWith( config.prefix + 'tpi')) {
+    bot.chat(message - config.prefix + '/')
+  }
+  return;
+})
+
+
+
+bot.on('chat', (username, message, prefix) => {
 
   function intervalFunc() {
     bot.chat('/sudo RealDinhero21');
