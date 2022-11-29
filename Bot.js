@@ -3,7 +3,8 @@ const config = require("./config.json");
 const mineflayer = require('mineflayer')
 const Str = require('@supercharge/strings')
 const random = Str.random(10)
-
+const helloWorld = 'Hello world!'
+const newHelloWorld = helloWorld.slice(1)
 
 const bot = mineflayer.createBot({
   host: config.ip, // minecraft server ip
@@ -66,7 +67,7 @@ bot.on('chat', (username, message, prefix) => {
 
 bot.on('chat', (username, message, prefix) => {
   if  (message.startsWith( config.prefix + 'tpt')) {
-    bot.chat(message - config.prefix + message)
+    bot.chat(newHelloWorld)
   }
   return;
 })
