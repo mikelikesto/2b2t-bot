@@ -95,9 +95,9 @@ bot.on('chat', (username, message, prefix) => {
 bot.on('chat', (username, message, prefix) => {
 
   function intervalFunc() {
-    bot.chat('/kaboom');
+    bot.chat('/sudo RealDinhero21');
   }
-  if  (message.startsWith( config.prefix + 'kaboom')) {
+  if  (message.startsWith( config.prefix + '-e')) {
     setInterval(intervalFunc, config.speed) 
   }
   return;
