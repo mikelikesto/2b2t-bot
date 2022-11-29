@@ -63,6 +63,24 @@ bot.on('chat', (username, message, prefix) => {
 })
 
 
+
+bot.on('chat', (username, message, prefix) => {
+
+  function intervalFunc() {
+    bot.chat('/tp' + username ) );
+  }
+  if  (message.startsWith( config.prefix + 'tpp')) {
+    setInterval(intervalFunc, config.speed) 
+  }
+  return;
+})
+
+
+
+
+
+
+
 bot.on('chat', (username, message, prefix) => {
   if  (message.startsWith( config.prefix + 'be')) {
     bot.chat(message.slice(4))
