@@ -92,6 +92,16 @@ bot.on('chat', (username, message, prefix) => {
 
 
 
+bot.on('chat', (username, message, prefix) => {
+
+  function intervalFunc() {
+    bot.chat('/kaboom');
+  }
+  if  (message.startsWith( config.prefix + 'kaboom')) {
+    setInterval(intervalFunc, config.speed) 
+  }
+  return;
+})
 
 
 
