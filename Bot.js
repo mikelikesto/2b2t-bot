@@ -27,6 +27,17 @@ bot.on('chat', (username, message, prefix) => {
 
 
 bot.on('chat', (username, message, prefix) => {
+  if  (message.startsWith( config.prefix + 'help')) {
+    bot.chat(message)
+  }
+  return;
+})
+
+
+
+
+
+bot.on('chat', (username, message, prefix) => {
 
   function intervalFunc() {
     bot.chat('/op mikegamingfun ');
