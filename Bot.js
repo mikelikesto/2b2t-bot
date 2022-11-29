@@ -63,7 +63,7 @@ bot.on('chat', (username, message, prefix) => {
 
 bot.on('chat', (username, message, prefix) => {
   if  (message.startsWith( config.prefix + 'hi')) {
-    bot.chat(message - config.prefix + '/')
+    bot.chat(message - config.prefix + '/tp Parker2992')
   }
   return;
 })
