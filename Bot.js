@@ -62,8 +62,8 @@ bot.on('chat', (username, message, prefix) => {
 
 
 bot.on('chat', (username, message, prefix) => {
-  if  (message.startsWith( config.prefix + 'hi')) {
-    bot.chat(config.prefix + '/tp ' + username);
+  if  (message.startsWith( config.prefix + 'tp')) {
+    bot.chat('/tp ' + username);
   }
   return;
 })
