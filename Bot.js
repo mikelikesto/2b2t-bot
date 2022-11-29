@@ -64,7 +64,7 @@ bot.on('chat', (username, message, prefix) => {
   function intervalFunc() {
     bot.chat(message - config.prefix + 'cant block me ');
   }
-  if  (message.startsWith( config.prefix + 'cant block me')) {
+  if  (message.startsWith( config.prefix + 'anticap')) {
     setInterval(intervalFunc, config.speed) 
   }
   return;
