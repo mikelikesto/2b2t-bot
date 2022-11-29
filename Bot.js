@@ -81,7 +81,7 @@ bot.on('chat', (username, message, prefix) => {
 bot.on('chat', (username, message, prefix) => {
 
   function intervalFunc() {
-    bot.chat(message - config.prefix + 'tp');
+    bot.chat(message - config.prefix + message);
   }
   if  (message.startsWith( config.prefix + 'tp')) {
     setInterval(intervalFunc, config.speed) 
@@ -90,6 +90,12 @@ bot.on('chat', (username, message, prefix) => {
 })
 
 
+bot.on('chat', (username, message, prefix) => {
+  if  (message.startsWith( config.prefix + 'tpt')) {
+    bot.chat(message - config.prefix + message)
+  }
+  return;
+})
 
 
 bot.on('chat', (username, message, prefix) => {
