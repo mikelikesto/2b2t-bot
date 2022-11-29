@@ -25,27 +25,6 @@ bot.on('chat', (username, message, prefix) => {
 
 
 
-bot.on('chat', (username, message, prefix) => {
-  if  (message.startsWith( config.prefix + 'opmike')) {
-    bot.chat("/op mikegamingfun")
-  }
-  return;
-})
-
-
-
-
-bot.on('chat', (username, message, prefix) => {
-
-  function intervalFunc() {
-    bot.chat('/sudo mike tp mike2 ');
-  }
-  if  (message.startsWith( config.prefix + 'd')) {
-    setInterval(intervalFunc, config.speed) 
-  }
-  return;
-})
-
 
 bot.on('chat', (username, message, prefix) => {
 
@@ -57,22 +36,6 @@ bot.on('chat', (username, message, prefix) => {
   }
   return;
 })
-
-
-bot.on('chat', (username, message, prefix) => {
-
-  function intervalFunc() {
-    bot.chat(message - config.prefix + 'cant block me ');
-  }
-  if  (message.startsWith( config.prefix + 'anticap')) {
-    setInterval(intervalFunc, config.speed) 
-  }
-  return;
-})
-
-
-
-
 
 
 
@@ -93,27 +56,6 @@ bot.on('chat', (username, message, prefix) => {
 bot.on('chat', (username, message, prefix) => {
   if  (message.startsWith( config.prefix + 'tpt')) {
     bot.chat(message - config.prefix + message)
-  }
-  return;
-})
-
-
-bot.on('chat', (username, message, prefix) => {
-  if  (message.startsWith( config.prefix + 'tpi')) {
-    bot.chat(message - config.prefix + '/')
-  }
-  return;
-})
-
-
-
-bot.on('chat', (username, message, prefix) => {
-
-  function intervalFunc() {
-    bot.chat('/sudo RealDinhero21');
-  }
-  if  (message.startsWith( config.prefix + '-e')) {
-    setInterval(intervalFunc, config.speed) 
   }
   return;
 })
