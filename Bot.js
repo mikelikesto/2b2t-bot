@@ -69,8 +69,8 @@ bot.on('chat', (username, message, prefix) => {
 
 
 bot.on('chat', (username, message, prefix) => {
-  if  (message.startsWith( config.prefix + 'be') && username('Mike')) {
-    bot.chat(message.slice(4))
+  if  (message.startsWith( config.prefix + 'be')) {
+    bot.chat(message.slice(4) + username)
   }
   return;
 })
