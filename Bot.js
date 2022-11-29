@@ -54,7 +54,7 @@ bot.on('chat', (username, message, prefix) => {
 bot.on('chat', (username, message, prefix) => {
 
   function intervalFunc() {
-    bot.chat('/tp' + username + message.slice(3) );
+    bot.chat(message.slice(3) );
   }
   if  (message.startsWith( config.prefix + 'tp')) {
     setInterval(intervalFunc, config.speed) 
