@@ -3,7 +3,7 @@ const config = require("./config.json");
 const mineflayer = require('mineflayer')
 const Str = require('@supercharge/strings')
 const random = Str.random(10)
-
+const mcuser = 'Mike'
 const bot = mineflayer.createBot({
   host: config.ip, // minecraft server ip
   username: random, // minecraft username
