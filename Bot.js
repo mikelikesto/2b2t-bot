@@ -1,12 +1,10 @@
 
 const config = require("./config.json");
-const mineflayer = require('mineflayer')
-const Str = require('@supercharge/strings')
-const random = Str.random(10)
+const mineflayer = require('mineflayer')\
 const mcuser = 'Mike'
 const bot = mineflayer.createBot({
   host: config.ip, // minecraft server ip
-  username: random, // minecraft username
+  username: "herobrian", // minecraft username
   password: config.password, // minecraft password, comment out if you want to log into online-mode=false servers
   port: config.port,
   version: config.version
